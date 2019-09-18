@@ -10,7 +10,7 @@
 ### Association
 - has_many :messages
 
-##groupsテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |group_name|string|null: false|
