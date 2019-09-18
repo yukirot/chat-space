@@ -1,6 +1,6 @@
-#Chat-Space DB設計
+# Chat-Space DB設計
 
-##userテーブル
+## userテーブル
 |Column|Type|Options|
 |------|----|-------|
 |email|string|null: false|
@@ -20,7 +20,7 @@
 - has_many :users
 - has_many :messages
 
-##messagesテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|text||
@@ -32,7 +32,7 @@
 - belongs_to :user
 - belongs_to :group
 
-##groups_usersテーブル
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
@@ -41,4 +41,3 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
-
