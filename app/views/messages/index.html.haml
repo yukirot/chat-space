@@ -1,6 +1,49 @@
 .wrapper
 
- =render 'shared/side_bar'
+  =render 'shared/side_bar'
 
- .chat
- 
+  .chat
+    .header
+      .header-group
+        .header-group__name
+          グループ名
+        %ul.header-group__members
+          メンバー:
+          %li.member
+            メンバー名
+          %li.member
+            メンバー名
+      .header-right
+        .header-right__button
+          Edit
+    .messages
+      .message
+        .upper-message
+          .upper-message__user-name
+            メンバー
+          .upper-message__date
+            2019/9/29
+        .lower-meesage
+          .lower-message__content
+            メッセージ
+      .message
+        .upper-message
+          .upper-message__user-name
+            メンバー
+          .upper-message__date
+            2019/9/29
+        .lower-meesage
+          .lower-message__content
+            メッセージ
+    .form
+      %form
+        %input.form__message
+        .form__mask
+          %label.form__mask__image
+            = fa_icon 'picture-o', class: 'icon'
+            %input.hidden{type: 'file'}
+        %input.form__send{type: 'submit', value: 'Send'}
+
+
+       
+       

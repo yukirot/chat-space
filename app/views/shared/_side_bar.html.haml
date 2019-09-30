@@ -1,11 +1,21 @@
 .side-bar
   .header
-    %h.header__name
-    ユーザの名前
+    %h1.header__name
+    ユーザーの名前
     %ul.header__icons
       %li.list
         =fa_icon 'pencil-square-o', class: 'icon'
       %li.list
         =fa_icon 'cog', class: 'icon'
 
-
+  .groups
+    .group
+      .group__name
+        グループ名
+      .group__message
+        新着メッセージ
+    .group
+      .group__name
+        グループ名
+      .group__message
+        新着メッセージ
