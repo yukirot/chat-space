@@ -5,5 +5,16 @@
 @import "modules/side_bar";
 @import "modules/chat";
 @import "modules/form";
+@import "modules/user";
 
+.notifications {
+  color: $white;
+  text-align: center;
 
+  .notice {
+    background-color: $blue;
+  }
+  .alert {
+    background-color: orange;
+  }
+}
