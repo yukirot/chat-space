@@ -11,7 +11,7 @@
     &__name {
       display: inline-block;
       font-size: $side_user_name;
-
+      font-weight:bold;
     }
     &__icons {
       display: inline-block;
@@ -20,6 +20,7 @@
         display: inline-block;
       }
       .icon {
+        color: $white;
         font-size: $side_user_name;
       }
     }
@@ -33,9 +34,11 @@
       box-sizing: border-box;
       padding: 20px 0 40px;
       &__name {
+        color: $white;
         font-size: $side_group_name;
       }
       &__message {
+        color: $white;
         font-size: $side_group_message;
       }
     }
