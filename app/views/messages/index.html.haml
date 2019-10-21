@@ -6,13 +6,11 @@
     .header
       .header-group
         .header-group__name
-          グループ名
+          - current_user.groups.each do |group|
+            =group.name
         %ul.header-group__members
-          メンバー:
-          %li.member
-            メンバー名
-          %li.member
-            メンバー名
+          - @group.group_users.each do |group_user|
+            =group_user.user.name
       .header-right
         .header-right__button
           Edit

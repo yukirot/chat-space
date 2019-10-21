@@ -1,10 +1,17 @@
 .chat {
   float: left;
+  left: 300px;
   width: calc(100% - 300px);
   .header {
     box-sizing: border-box;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 300px;
+    right: 0px;
     height: 100px;
     padding: 0 40px;
+    z-index: 1;
     .header-group {
       float: left;
       &__name {
@@ -36,8 +43,13 @@
   .messages {
     background-color: $white;
     box-sizing: border-box;
-    padding: 46px 40px 0;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    right: 0px;
+    padding: 46px 40px 90px;
     height: calc(100% - 100px);
+    overflow: scroll;
     .message {
       .upper-message {
         display: flex;

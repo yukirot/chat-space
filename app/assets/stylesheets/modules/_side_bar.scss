@@ -1,6 +1,7 @@
 .side-bar {
   float: left;
   box-sizing: border-box;
+  position: fixed;
   color: $white;
   width: 300px;
   .header {
