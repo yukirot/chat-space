@@ -6,14 +6,14 @@
     .header
       .header-group
         .header-group__name
-          - current_user.groups.each do |group|
-            =group.name
+          = @group.name
         %ul.header-group__members
           - @group.group_users.each do |group_user|
             =group_user.user.name
       .header-right
-        .header-right__button
-          Edit
+        %ul.header-right__button
+          = link_to edit_group_path(@group) do
+            ='Edit'
     .messages
       = render @messages
 
